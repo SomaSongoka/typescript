@@ -4,7 +4,7 @@
  */
 
 // Number
-let Age:number = 5;
+let myAge:number = 5;
 
 // String
 let myName: string = "Joshua Minga";
@@ -16,7 +16,7 @@ let isTanzanian: boolean = true;
 let randomInfo: any = "can be string, boolean, array or number (any)";
 
 // Array(s)
-let mySchools: string[] = ['Kigamboni Priamry','Presbyterian Seminary','Jitegemee Highschool']; // Array of string
+let mySchools:string[] = ['Kigamboni Priamry','Presbyterian Seminary','Jitegemee Highschool']; // Array of string
 
 let bestYears: number[] = [1992,2004,2010,2013,2018,2024]; // Array of Numbers
 
@@ -34,4 +34,11 @@ const callString = (a:number, b: string ) => {
     return a + b;
 } 
 
-console.log(callString(Age,mixedInfo));
+console.log(callString(myAge,randomInfo));
+
+// To specifiy a return type
+const returnThis = (c:string,d:string): string[] => {
+    return [c,d]; // Notify we're returning an array of string
+}
+
+console.log(returnThis(myName,randomInfo));
